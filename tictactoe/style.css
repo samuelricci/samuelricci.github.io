@@ -1,0 +1,45 @@
+div.main-container {
+    height: 100%;
+    width: 960px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+div.gameBoard {
+    height: 900px;
+    width: 900px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+div.cell {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    border: 1px solid black;
+    
+}
+
+div.settings {
+    
+}
+
+div.difficulty {
+    
+}
+
+div.level {
+    
+}
+
+div.not-selected {
+    
+}
+
+div.begin {
+    
+}
+
+div.gameMessage {
+    
+}
