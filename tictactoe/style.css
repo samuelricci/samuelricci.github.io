@@ -1,15 +1,14 @@
 div.main-container {
     height: 100%;
-    width: 960px;
+    width: auto
     margin: 0 auto;
-    border: 1px solid black;
 }
 
 div.gameBoard {
-    height: 900px;
-    width: 900px;
+    height: ;
+    width: ;
     margin: 0 auto;
-    border: 1px solid black;
+    border: ;
 }
 
 div.cell {
@@ -17,7 +16,6 @@ div.cell {
     height: 300px;
     margin: 0 auto;
     border: 1px solid black;
-    
 }
 
 div.settings {
