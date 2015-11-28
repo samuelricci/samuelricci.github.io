@@ -74,7 +74,7 @@ ui.switchViewTo = function(turn) {
 
 ui.insertAt = function(indx, symbol) {
     var gameBoard = $('.cell');
-    var targetCell = $(gameBoard[index]);
+    var targetCell = $(gameBoard[indx]);
     
     if (!targetCell.hasClass('occupied')) {
         targetCell.html(symbol);
