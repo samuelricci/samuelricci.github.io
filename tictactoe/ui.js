@@ -15,7 +15,18 @@ ui.currentView = "";
 /*
  * Starts the flickering effect of the robot image 
  */
+ui.startRobotFlickering = function() {
+    ui.robotFlickeringHandle = setInterval(function() {
+        $("#robot").toggleClass("robot");
+    }, 500);
+};
 
+/*
+ * Stops the flickering effect on the robot image
+ */
+ui.startRobotFlickering = function() {
+    clearInterval(ui.robotFlickeringHandle);
+};
 
 /*
  * Switches the view on the UI depending on who's turn it is
