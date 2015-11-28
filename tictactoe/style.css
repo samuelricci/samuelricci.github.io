@@ -52,7 +52,7 @@ span.not-selected {
     opacity: 0.5;
 }
 
-span.not-selected {
+span.not-selected:hover {
     opacity: 1;
 }
 
@@ -63,8 +63,12 @@ div.begin {
     text-align: center;
     cursor: pointer;
     color: black;
+    opacity: 0.8;
 }
 
+div.begin:hover {
+    opacity: 1;
+}
 div.gameMessage {
     display: none;
 }

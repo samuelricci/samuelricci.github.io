@@ -11,10 +11,10 @@ var globals = {};
 $(".level").each(function() {
     var $this = $(this);
     $this.click(function() {
-        $(".selected").toggleClass("not-selected");
-        $(".selected").toggleClass("selected");
-        $this.toggleClass("not-selected");
-        $this.toggleClass("selected");
+        $('.selected').toggleClass('not-selected');
+        $('.selected').toggleClass('selected');
+        $this.toggleClass('not-selected');
+        $this.toggleClass('selected');
         
         ai.level = $this.attr("id");
     });
@@ -26,7 +26,7 @@ $(".level").each(function() {
  * UI view switches to indicate that it is the humans turn to play.
  */
 $(".begin").click(function() {
-    var selectedDifficulty = $(".selected").attr("id");
+    var selectedDifficulty = $('.selected').attr("id");
     if(typeof selectedDifficulty !== "undefined") {
         var aiPlayer = new AI(selectedDifficulty);
         globals.game = new Game(aiPlayer);
