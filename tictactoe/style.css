@@ -36,28 +36,33 @@ div.settings {
 }
 
 div.difficulty {
-    width: 100%;
-    float: left;
-    display: block;
+    font-size: 25px;
+    font-weight: 700;
     text-align: center;
+    margin-top: 40px;
 }
 
 span.level {
-    width: auto;
-    text-align: center;
-    padding: 10px 5px;
-    margin: 0 auto;
-    display: inline-block;
+    margin: 0 15px;
+    color: black;
+    cursor: pointer;
 }
 
 span.not-selected {
-    
+    opacity: 0.5;
+}
+
+span.not-selected {
+    opacity: 1;
 }
 
 div.begin {
-    width: auto;
+    margin-top: 15px;
+    font-weight: 900;
+    font-size: 40px;
     text-align: center;
-    display: block;
+    cursor: pointer;
+    color: black;
 }
 
 div.gameMessage {
