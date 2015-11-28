@@ -1,43 +1,65 @@
-div.main-container {
+body {
+    width: auto;
+    height: auto;
+}
+
+div.gameContainer {
     height: 100%;
-    width: auto
+    width: 776px;
     margin: 0 auto;
+    display: block;
 }
 
 div.gameBoard {
-    height: ;
-    width: ;
-    margin: 0 auto;
-    border: ;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    float: left;
+    display: block;
 }
 
 div.cell {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     margin: 0 auto;
     border: 1px solid black;
+    float: left;
+    display: block;
+    cursor: pointer;
+    text-align: center;
 }
 
 div.settings {
-    
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
 }
 
 div.difficulty {
-    
+    width: 100%;
+    float: left;
+    display: block;
+    text-align: center;
 }
 
-div.level {
-    
+span.level {
+    width: auto;
+    text-align: center;
+    padding: 10px 5px;
+    margin: 0 auto;
+    display: inline-block;
 }
 
-div.not-selected {
+span.not-selected {
     
 }
 
 div.begin {
-    
+    width: auto;
+    text-align: center;
+    display: block;
 }
 
 div.gameMessage {
-    
+    display: none;
 }
