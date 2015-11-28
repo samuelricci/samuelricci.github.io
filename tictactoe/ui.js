@@ -31,7 +31,27 @@ ui.switchViewTo = function(turn) {
         if (_turn === "ai")
             ui.startRobot
     }
-}
+    
+    if(ui.initialControlsVisible) {
+        // If the game is just starting
+        ui.intialControlsVisible = false;
+        
+        $('.initial').fadeOut({
+            duration: "slow",
+            done: function() {
+                _switch(turn);
+            }
+        });
+    } else {
+        // If the game is in an intermediate state
+        $(ui.currentView).fadeOut({
+            duration: "fast",
+            done: function() {
+                _switch(turn);
+            }
+        });
+    }
+};
 
 
 /*
@@ -41,7 +61,7 @@ ui.switchViewTo = function(turn) {
  * @param symbol [String]: X or O
  */
 
-ui.insertAt = function(index, symbol) {
+ui.insertAt = function(indx, symbol) {
     var board = $('.cell');
     var targetCell = $(gameBoard[index]);
     
