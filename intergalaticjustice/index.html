@@ -2,13 +2,12 @@
 <html>
 <head>
 <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
-<link rel="stylesheet" type="text/css" href="style.css">
   <meta charset="utf-8">
   <title>Rock, Paper, Scissors</title>
 </head>
 <body>
   <p>Choose your weapon of choice!</p>
-  <pre id="playerRock">
+  <pre id="rock">
       _ _ _ _ _ _ _ _ _ _
      |                   |
      |        _______    |
@@ -22,7 +21,7 @@
      |     ROCK!!!       |
       - - - - - - - - - - 
   </pre>
-  <pre id="playerPaper">
+  <pre id="paper">
       _ _ _ _ _ _ _ _ _ _
      |                   |
      |      _____        |
@@ -37,7 +36,7 @@
      |     PAPER!!!      |
       - - - - - - - - - - 
   </pre>
-  <pre id="playerScissors">
+  <pre id="scissors">
       _ _ _ _ _ _ _ _ _ _
      |                   |
      |      _____        |
@@ -53,6 +52,7 @@
       - - - - - - - - - - 
   </pre>
   <p>Computer's choice: <span id="aiPick"></span></p>
+  <p>Result: <span id="compareResult"></span></p>
   <p id="win" style="display: none;">You Win!</p>
   <p id="lose" style="display: none;">You Lose!</p>
   <p id="tie" style="display: none;">Inconceivable you tied!</p>
