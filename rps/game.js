@@ -1,18 +1,11 @@
 var aiArray = ['rock', 'paper', 'scissors'];
-
-var aiChoice = aiArray[Math.floor(Math.random()*3)];
-
-$('#aiPick').html(aiChoice);
-
-// Listen for user click and then compare with aiChoice and display answer
-// depending on comparison logic
-var playerChoice = humanPick;
-
-$('pre').on('click', function(e) {
-  var humanPick = e.target.id;
-  alert ( humanPick );
-}); 
-
+ 
+$("div").click(function() { //Add this listener to all div elements that, on click, will: ...
+	var clickedID = $(this).attr('id'); //Get the id of the clicked div element.
+	
+	if (clickedID === "rock" || clickedID === "paper" || clickedID === "scissors") //If it is a rock, paper, or scissors div: call our newChoice method.
+		newChoice(clickedID);
+});
 
 function compare (playerChoice, aiChoice) {
   
@@ -32,6 +25,9 @@ function compare (playerChoice, aiChoice) {
   return (result);
 }
 
-
-
-$('#compareResult').html(endResult);
+function newChoice (playerChoice) {
+	var aiChoice = aiArray[Math.floor(Math.random()*3)];
+	
+	$('#aiPick').html(aiChoice);
+	$('#compareResult').html( compare(playerChoice, aiChoice) ); //Set the compareResult html to the result of the comparison of the player's and AI's choices.
+}
