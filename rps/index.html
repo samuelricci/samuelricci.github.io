@@ -1,62 +1,69 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="/rps/game.js"></script>
-<link rel="stylesheet" type="text/css" href="/rps/style.css"/>
+<link rel="stylesheet" type="text/css" href="style.css"/>
   <meta charset="utf-8">
   <title>Rock, Paper, Scissors</title>
 </head>
 <body>
   <p>Choose your weapon of choice!</p>
-  <pre id="rock">
-      _ _ _ _ _ _ _ _ _ _
-     |                   |
-     |        _______    |
-     |    ---'   ____)   |
-     |          (_____)  |
-     |         (_____)   |
-     |         (____)    |
-     |   ---.__(___)     |
-     |                   |
-     |                   |
-     |     ROCK!!!       |
-      - - - - - - - - - - 
-  </pre>
-  <pre id="paper">
-      _ _ _ _ _ _ _ _ _ _
-     |                   |
-     |      _____        |
-     |  ---'  ___)____   |
-     |          ______)  |
-     |          _______) |
-     |         _______)  |
-     |  ---._________)   |
-     |                   |
-     |                   |
-     |                   |
-     |     PAPER!!!      |
-      - - - - - - - - - - 
-  </pre>
-  <pre id="scissors">
-      _ _ _ _ _ _ _ _ _ _
-     |                   |
-     |      _____        |
-     |  ---' ____)_____  |
-     |           ______) |
-     |        __________)|
-     |       (____)      |
-     | ---.__(___)       |
-     |                   |
-     |                   |
-     |                   |
-     |   SCISSORS!!!     |
-      - - - - - - - - - - 
-  </pre>
+  <div id="rock">
+	  <pre>
+		  _ _ _ _ _ _ _ _ _ _
+		 |                   |
+		 |        _______    |
+		 |    ---'   ____)   |
+		 |          (_____)  |
+		 |         (_____)   |
+		 |         (____)    |
+		 |   ---.__(___)     |
+		 |                   |
+		 |                   |
+		 |     ROCK!!!       |
+		  - - - - - - - - - - 
+	  </pre>
+  </div>
+  <div id="paper">
+	<pre>
+		  _ _ _ _ _ _ _ _ _ _
+		 |                   |
+		 |      _____        |
+		 |  ---'  ___)____   |
+		 |          ______)  |
+		 |          _______) |
+		 |         _______)  |
+		 |  ---._________)   |
+		 |                   |
+		 |                   |
+		 |                   |
+		 |     PAPER!!!      |
+		  - - - - - - - - - - 
+		  </pre>
+  </div>
+  <div id="scissors">
+		<pre>
+		  _ _ _ _ _ _ _ _ _ _
+		 |                   |
+		 |      _____        |
+		 |  ---' ____)_____  |
+		 |           ______) |
+		 |        __________)|
+		 |       (____)      |
+		 | ---.__(___)       |
+		 |                   |
+		 |                   |
+		 |                   |
+		 |   SCISSORS!!!     |
+		  - - - - - - - - - - 
+	  </pre>
+  </div>
   <p>Computer's choice: <span id="aiPick"></span></p>
   <p>Result: <span id="compareResult"></span></p>
   <p id="win" style="display: none;">You Win!</p>
   <p id="lose" style="display: none;">You Lose!</p>
   <p id="tie" style="display: none;">Inconceivable you tied!</p>
+
+<script src="game.js"></script>
 </body>
 </html>
