@@ -1,3 +1,26 @@
+body {
+    background-color: black;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0;
+    display: block;
+}
+
+div#rock, div#paper, div#scissors {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0;
+}
+
+p {
+    color: white;
+}
+
 pre {
-  cursor: pointer;
+    color: white;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
